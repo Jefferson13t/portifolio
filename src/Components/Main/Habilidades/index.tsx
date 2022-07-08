@@ -1,8 +1,13 @@
 import React from "react";
+import { ContainerHab } from "./style";
+import { Habilidade } from "./Habilidade";
+import { data } from '../../../data'
 
 export  const Habilidades = ( ) => {
     return (
-        <div>hello</div>
+        <ContainerHab> 
+            <h1>Habilidades</h1>
+            <Habilidade skills={data.skills}/>
+        </ContainerHab>
     )
-
-}
+    }

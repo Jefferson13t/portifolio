@@ -1,29 +1,57 @@
+interface datas {
+    resume: string,
+    skills: skills[],
+    projects: projects[],
+    contact: contact[]
+}
 
-export const data = {
+export interface skills {
+    habName: string,
+    habLevel: number,
+    logoPath: string
+}
+
+interface projects {
+
+    title: string,
+    imgPath: string,
+    techs: string,
+    description: string,
+    link: string
+
+}
+
+interface contact {
+    contactName: string,
+    logoPath: string,
+    link: string,
+    }
+
+export const data: datas = {
     resume: "Minha historia com a programacao comecou com meu amor por jogos",
     skills: [{
         habName: "React",
-        habLevel: [1],
+        habLevel: 1,
         logoPath: "" 
     },{
         habName: "Node",
-        habLevel: [1],
+        habLevel: 1,
         logoPath: "" 
     },{
         habName: "javascript",
-        habLevel: [3],
+        habLevel: 3,
         logoPath: "" 
     },{
         habName: "html",
-        habLevel: [3],
+        habLevel: 3,
         logoPath: "" 
     },{
         habName: "css",
-        habLevel: [1],
+        habLevel: 1,
         logoPath: "" 
     },{
         habName: "Typescript",
-        habLevel: [1],
+        habLevel: 1,
         logoPath: "" 
     }
     ],
