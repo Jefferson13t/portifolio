@@ -1,5 +1,12 @@
+import { ReactNode } from "react"
+import { FaReact, FaNode, FaHtml5, FaCss3Alt } from "react-icons/fa"
+import {IoLogoJavascript} from 'react-icons/io'
+import {SiTypescript} from 'react-icons/si'
+import profile from './img/Profile.jpg'
+
+
 interface datas {
-    resume: string,
+    about: about,
     skills: skills[],
     projects: projects[],
     contact: contact[]
@@ -7,8 +14,8 @@ interface datas {
 
 export interface skills {
     habName: string,
-    habLevel: number,
-    logoPath: string
+    habLevel: (10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100),
+    logo: ReactNode
 }
 
 interface projects {
@@ -23,36 +30,45 @@ interface projects {
 
 interface contact {
     contactName: string,
-    logoPath: string,
+    logo: string,
     link: string,
     }
 
+interface about {
+    img: string, 
+    resume: string
+}
+    
+
 export const data: datas = {
-    resume: "Minha historia com a programacao comecou com meu amor por jogos",
+    about: {
+        img: profile, 
+        resume: "Minha historia com a programacao comecou com meu amor por jogos."
+    },
     skills: [{
         habName: "React",
-        habLevel: 1,
-        logoPath: "" 
+        habLevel: 10,
+        logo: <FaReact />
     },{
         habName: "Node",
-        habLevel: 1,
-        logoPath: "" 
+        habLevel: 100,
+        logo: <FaNode />
     },{
         habName: "javascript",
-        habLevel: 3,
-        logoPath: "" 
+        habLevel: 60,
+        logo: <IoLogoJavascript />
     },{
-        habName: "html",
-        habLevel: 3,
-        logoPath: "" 
+        habName: "Html",
+        habLevel: 60,
+        logo: <FaHtml5 />
     },{
-        habName: "css",
-        habLevel: 1,
-        logoPath: "" 
+        habName: "CSS",
+        habLevel: 50,
+        logo: <FaCss3Alt />
     },{
         habName: "Typescript",
-        habLevel: 1,
-        logoPath: "" 
+        habLevel: 50,
+        logo: <SiTypescript />
     }
     ],
         
@@ -77,21 +93,21 @@ export const data: datas = {
     contact: [
         {
         contactName: "Instagram",
-        logoPath: "",
+        logo: "",
         link: "",
         },{
         contactName: "Github",
-        logoPath: "",
+        logo: "",
         link: "",
         },
         {
         contactName: "E-mail",
-        logoPath: "",
+        logo: "",
         link: "",
         },
         {
         contactName: "linkedin",
-        logoPath: "",
+        logo: "",
         link: "",
         }
     ]
