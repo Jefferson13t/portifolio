@@ -1,17 +1,14 @@
-import React from 'react';
 import GlobalStyle from './styles/GlobalStyle';
-import Header from "./Components/Header"
-import Main from "./Components/Main"
-import Footer from "./Components/Footer"
+import { Sobre } from "./Components/Main/Sobre"
+import {Habilidades} from "./Components/Main/Habilidades"
 import { Container } from './style';
 
 
 function App() {
   return (
     <Container>
-      <Header /> <br />
-      <Main /> <br />
-      <Footer /> <br />
+      <Sobre />
+      <Habilidades /> 
 
     <GlobalStyle />
       </Container>

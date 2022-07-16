@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 import { FaReact, FaNode, FaHtml5, FaCss3Alt } from "react-icons/fa"
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiTypescript} from 'react-icons/si'
+import { AiFillGithub } from 'react-icons/ai'
 import profile from './img/Profile.jpg'
 
 
@@ -51,7 +52,7 @@ export const data: datas = {
         logo: <FaReact />
     },{
         habName: "Node",
-        habLevel: 100,
+        habLevel: 50,
         logo: <FaNode />
     },{
         habName: "javascript",
@@ -69,6 +70,10 @@ export const data: datas = {
         habName: "Typescript",
         habLevel: 50,
         logo: <SiTypescript />
+    },{
+        habName: "GitHub ",
+        habLevel: 40,
+        logo: <AiFillGithub />
     }
     ],
         

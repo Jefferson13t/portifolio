@@ -12,7 +12,10 @@ export default createGlobalStyle`
     justify-content:center;
     font-family: 'Times New Roman', Times, serif;
 
-}
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+
+    }
 
 
 
