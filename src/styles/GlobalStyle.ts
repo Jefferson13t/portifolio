@@ -11,9 +11,19 @@ export default createGlobalStyle`
     display: flex;
     justify-content:center;
     font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(-10deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 59%, rgba(0,212,255,1) 100%)
+    ;
 
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--primary)
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: white;
+    }
 
     }
 

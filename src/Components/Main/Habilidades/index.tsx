@@ -1,4 +1,3 @@
-import React from "react";
 import { ContainerHab } from "./style";
 import { Habilidade } from "./Habilidade";
 import { data } from '../../../data'

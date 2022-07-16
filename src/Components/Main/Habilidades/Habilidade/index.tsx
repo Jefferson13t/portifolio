@@ -1,4 +1,3 @@
-import React from "react";
 import { skills } from '../../../../data' 
 import { Habilidades } from "./style";
 

@@ -37,14 +37,14 @@ interface contact {
 
 interface about {
     img: string, 
-    resume: string
+    resume: string[]
 }
     
 
 export const data: datas = {
     about: {
         img: profile, 
-        resume: "Minha historia com a programacao comecou com meu amor por jogos."
+        resume: ["Olá!! Meu nome é Jefferson, sou de belo horizonte em MG e sou apaixonado por tecnológia.", "Minha historia com a programacao comecou com meu amor por jogos."]
     },
     skills: [{
         habName: "React",
@@ -54,6 +54,106 @@ export const data: datas = {
         habName: "Node",
         habLevel: 50,
         logo: <FaNode />
+    },{
+        habName: "javascript",
+        habLevel: 60,
+        logo: <IoLogoJavascript />
+    },{
+        habName: "Html",
+        habLevel: 60,
+        logo: <FaHtml5 />
+    },{
+        habName: "CSS",
+        habLevel: 50,
+        logo: <FaCss3Alt />
+    },{
+        habName: "Typescript",
+        habLevel: 50,
+        logo: <SiTypescript />
+    },{
+        habName: "GitHub ",
+        habLevel: 40,
+        logo: <AiFillGithub />
+    },{
+        habName: "javascript",
+        habLevel: 60,
+        logo: <IoLogoJavascript />
+    },{
+        habName: "Html",
+        habLevel: 60,
+        logo: <FaHtml5 />
+    },{
+        habName: "CSS",
+        habLevel: 50,
+        logo: <FaCss3Alt />
+    },{
+        habName: "Typescript",
+        habLevel: 50,
+        logo: <SiTypescript />
+    },{
+        habName: "GitHub ",
+        habLevel: 40,
+        logo: <AiFillGithub />
+    },{
+        habName: "javascript",
+        habLevel: 60,
+        logo: <IoLogoJavascript />
+    },{
+        habName: "Html",
+        habLevel: 60,
+        logo: <FaHtml5 />
+    },{
+        habName: "CSS",
+        habLevel: 50,
+        logo: <FaCss3Alt />
+    },{
+        habName: "Typescript",
+        habLevel: 50,
+        logo: <SiTypescript />
+    },{
+        habName: "GitHub ",
+        habLevel: 40,
+        logo: <AiFillGithub />
+    },{
+        habName: "javascript",
+        habLevel: 60,
+        logo: <IoLogoJavascript />
+    },{
+        habName: "Html",
+        habLevel: 60,
+        logo: <FaHtml5 />
+    },{
+        habName: "CSS",
+        habLevel: 50,
+        logo: <FaCss3Alt />
+    },{
+        habName: "Typescript",
+        habLevel: 50,
+        logo: <SiTypescript />
+    },{
+        habName: "GitHub ",
+        habLevel: 40,
+        logo: <AiFillGithub />
+    },{
+        habName: "javascript",
+        habLevel: 60,
+        logo: <IoLogoJavascript />
+    },{
+        habName: "Html",
+        habLevel: 60,
+        logo: <FaHtml5 />
+    },{
+        habName: "CSS",
+        habLevel: 50,
+        logo: <FaCss3Alt />
+    },{
+        habName: "Typescript",
+        habLevel: 50,
+        logo: <SiTypescript />
+    },{
+        habName: "GitHub ",
+        habLevel: 40,
+        logo: <AiFillGithub />
     },{
         habName: "javascript",
         habLevel: 60,

@@ -7,12 +7,15 @@ export const Habilidades = styled.div`
     justify-content: space-between;
     align-items:center;
     font-size: 16pt;
-
-    > div > div {
+    > div {
+        overflow: hidden;
+        margin: 0 15px;
+        
+        > div {
         height: 100%;
         background-color: green;
-        border-radius: inherit;
-    
+        transform: skew(20deg);
     }
+}
 
 `

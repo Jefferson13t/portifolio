@@ -1,10 +1,13 @@
-import React from "react";
 import { data } from "./../../../data";
 import { About } from "./style";
 
 export const Sobre = () => {
+
+    const resumeText = data.about.resume.map(a=> {
+        return <p key={a} >{a}</p>
+    })
     return <About>
-        <p>{data.about.resume}</p>
+        <div>{resumeText}</div>
         <img src={data.about.img} alt="imagem de perfil"></img>
     </About>
 }
