@@ -4,12 +4,24 @@ export const About = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
 
+    >  div{
+        padding: 5px 10px;
+    p {
+        margin: 20px;
+        font-size: 16pt;
+    }
+}
     > img {
-        width: 30%;
-        min-width: 50px;
-        border-radius: 50%;
+        border-radius: 50px;
+        width: 50%;
+        min-width: 150px;
+        transition: .5s;
+
+        &:hover {
+            transform: rotate(-13deg)
+            
+        }
      }
 
 `

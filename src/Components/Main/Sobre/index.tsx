@@ -7,7 +7,7 @@ export const Sobre = () => {
         return <p key={a} >{a}</p>
     })
     return <About>
-        <div>{resumeText}</div>
         <img src={data.about.img} alt="imagem de perfil"></img>
+        <div>{resumeText}</div>
     </About>
 }

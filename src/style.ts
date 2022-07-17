@@ -1,12 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    flex-direction:column;
-    align-items: center;
     display: flex;
+    flex-direction:column;
   
-    
-    
     > div {
         scroll-snap-align: start;
         width: 80vw;
@@ -15,6 +12,7 @@ export const Container = styled.div`
         color: var(--primaryColor);
         border-radius: 20px;
         padding: 10px 5px;
+        overflow: hidden;
     }
 
     @media(max-width: 900px) {
@@ -24,7 +22,6 @@ export const Container = styled.div`
             width: 100%;
             display:flex;
             flex-direction: column;
-            justify-content: space-evenly;
 
         }
     }

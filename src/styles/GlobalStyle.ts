@@ -11,25 +11,31 @@ export default createGlobalStyle`
     display: flex;
     justify-content:center;
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(-10deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 59%, rgba(0,212,255,1) 100%)
-    ;
+    font-size: 16pt;
+    background: linear-gradient(-10deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 59%, rgba(0,212,255,1) 100%);
+
 
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 
     ::-webkit-scrollbar {
     width: 5px;
-    background-color: var(--primary)
+    background-color: white;
+    
+}
+::-webkit-scrollbar-thumb {
+        background: linear-gradient(-10deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 59%, rgba(0,212,255,1) 100%);
+        border-radius: 20px;
     }
-    ::-webkit-scrollbar-thumb {
-        background-color: white;
-    }
 
     }
 
+a {
+    color: black;
+    text-decoration: none;
+}
 
-
-*, button, input {
+*, button, input  {
     border:0;
     background-color:none;
     outline: none;
@@ -40,9 +46,9 @@ ul {
 }
 
 :root{
-    --primary: #023D21;
-    --secundary: blue;
-    --primaryColor: white;
+    --primary: white;
+    --secundary: rgba(0,212,255,1)  ;
+    --primaryColor: black;
 }
 
 `
