@@ -5,28 +5,27 @@ export const Contacts = styled.div`
     flex-direction: column;
     align-items: center;
 
-    > div {
+> div {
         display: flex;
-        flex-wrap: wrap;
-        font-size: 16pt;
-        justify-content: space-between;
-        align-items: center;        
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap:wrap;
         flex-grow: 1;
-        
         > div {
-            margin: 10px;
+            max-width: 700px;
+            margin: 20px;
             > div {
-            font-size: 18pt;
-            align-items: center;
-            
+                display: flex;
+                align-items: center; 
             > a {
-                margin: 5px 15px;
+                margin: 10px;
+                transition: .5s;
 
-                &:hover {
-                    color: rgba(0,0,0,.8)
+                &:hover{
+                color: rgba(0,0,0,.6)
                 }
-            }
             }
         }
     }
+}
 `
