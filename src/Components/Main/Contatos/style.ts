@@ -19,7 +19,7 @@ export const Contacts = styled.div`
                 align-items: center; 
             > a {
                 margin: 10px;
-                transition: .5s;
+                transition: .2s;
 
                 &:hover{
                 color: rgba(0,0,0,.6)
