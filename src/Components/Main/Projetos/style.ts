@@ -30,11 +30,12 @@ export const Container = styled.div`
     }
     
     @media(max-width: 900px) {
-
+        
         #left-arrow, #right-arrow { 
             display: none;
         }
         > div {
+            width: 100%;
         }
     }
 

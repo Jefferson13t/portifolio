@@ -10,11 +10,12 @@ export const Habilidades = styled.div`
     border-radius: 50px;
     height: 35px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
     max-width: 280px;
     
     &:hover {
-        background-color: rgba(0,0,0,.2);
+        box-shadow: black 5px 5px 10px;
+
     }
 
     > div {

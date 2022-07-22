@@ -13,6 +13,7 @@ export const ContainerHab = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     overflow-y: scroll;
     overflow-x: hidden;
+    padding: 5px;
     
     ::-webkit-scrollbar {
     width: 5px;
