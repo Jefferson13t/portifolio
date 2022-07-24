@@ -20,13 +20,14 @@ export const Projetos = () => {
 
     //habilitar swipe do celular para o carousel
     useEffect(() => {
-        const container = document.getElementById('carouselContainet')
+        const container = document.getElementById('carouselcontainer')
         let touchendX = 0
         let touchstartX = 0
         
     function checkDirection() {
-      if (touchendX < touchstartX) scrollTo(true)
-      if (touchendX > touchstartX) scrollTo(false)
+        if(touchendX < touchstartX)  scrollTo(true)
+        if(touchendX > touchstartX)  scrollTo(false)
+    
     }
     
     container?.addEventListener('touchstart', e => {
@@ -63,7 +64,7 @@ export const Projetos = () => {
         
         return (<Projects>
             <h1>Projetos</h1>
-            <Container id="carouselContainet">
+            <Container id="carouselcontainer">
                 <div id="left-arrow" onClick={() => scrollTo(true)}>{"<"}</div>
                 <Wrapper>
             <Card className='card' onKeyDown={()=> console.log('a')}>
