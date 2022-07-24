@@ -25,7 +25,7 @@ export const Habilidades = styled.div`
         
         > div {
         height: 100%;
-        background-color: var(--secundary);
+        background-color: var(--grad3);
         transform: skew(20deg);
     }
 }

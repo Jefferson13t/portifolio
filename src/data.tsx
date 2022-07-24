@@ -6,6 +6,9 @@ import {AiOutlineInstagram, AiOutlineLinkedin, AiFillGithub} from 'react-icons/a
 import {HiOutlineMail} from 'react-icons/hi'
 import {SiMysql} from 'react-icons/si'
 import profile from './img/Profile.jpeg'
+import noteBlock from './img/noteBlock.gif'
+import calculadora from './img/calculadora.gif'
+import snake from './img/snake.gif'
 
 
 interface datas {
@@ -25,9 +28,8 @@ export interface skills {
 interface projects {
 
     title: string,
-    imgPath: string,
+    img: string,
     techs: string,
-    description: string,
     link: string
 
 }
@@ -95,16 +97,19 @@ export const data: datas = {
     projects: [
         {
             title: "Bloco de Notas (CRUD)",
-            imgPath: "./img/Note_Block.gif",
+            img: noteBlock,
             techs: "React.js, Node.js, Mysql",
-            description: "Um bloco de notas que fiz para praticar um CRUD. fazer chamadas Http e salvar informações no banco de dados.",
             link: "https://github.com/Jefferson13t/Note-block"
         }, {
             title: "Calculadora",
-            imgPath: "./img/Nimg_calculadora.png",
+            img: calculadora,
             techs: "Javascript, Html, css",
-            description: "Segunda versao de uma calculadora que fiz para testar minha evolução. A primeira tinha mais de 200 linhas de codigo, essa apenas 50.",
             link: "https://github.com/Jefferson13t/Calculator_2.0"
+        }, {
+            title: "Snake",
+            img: snake,
+            techs: "Javascript, Html, css",
+            link: "https://github.com/Jefferson13t/snake-game"
         }
 
     ],

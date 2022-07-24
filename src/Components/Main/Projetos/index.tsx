@@ -1,23 +1,26 @@
 import { Projects, Container , Wrapper , Card } from './style'
 import { useEffect } from 'react';
+import { data } from './../../../data'
+import {BiLeftArrow, BiRightArrow} from 'react-icons/bi'
 
 export const Projetos = () => {
+    const dados = data.projects
     
     let control = 0;
 
-    //habilitar arrow para chamar a funcao scrollTo 
-    window.addEventListener('keydown', (event)=> {
-        if (event.key === 'ArrowLeft') {
-            scrollTo(true)
-        }
-        if (event.key === 'ArrowRight') {
-            scrollTo(false)
-        }
-        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight'){
-        event.preventDefault()
-        }
-    })
 
+        //habilitar arrow para chamar a funcao scrollTo 
+        window.addEventListener('keydown', (event)=> {
+            if (event.key === 'ArrowLeft') {
+                scrollTo(true)
+            }
+            if (event.key === 'ArrowRight') {
+                scrollTo(false)
+            }
+            if (event.key === 'ArrowLeft' || event.key === 'ArrowRight'){
+            event.preventDefault()
+            }
+        })
     //habilitar swipe do celular para o carousel
     let touchendX = 0
     let touchstartX = 0
@@ -75,24 +78,27 @@ export const Projetos = () => {
         cards[control].scrollIntoView({inline: 'center', behavior: 'smooth'})
         }
 
+        const cards = dados.map((dados)=> {
+            return (
+                <Card className='card'> 
+                <h1>{dados.title}</h1>
+                <a href={dados.link} target="blank">
+                <img src={dados.img} alt={dados.title}></img>
+                </a>
+                <p>Tecnologias: {dados.techs}</p>
+                </Card>
+            )
+        })
+
         
         return (<Projects>
             <h1>Projetos</h1>
             <Container id="carouselcontainer">
-                <div id="left-arrow" onClick={() => scrollTo(true)}>{"<"}</div>
+                    <BiLeftArrow id="left-arrow" onClick={() => scrollTo()}/>
                 <Wrapper>
-            <Card className='card' onKeyDown={()=> console.log('a')}>
-                a
-            </Card>
-            <Card className='card'>
-                b
-            </Card><Card className='card'>
-                c
-            </Card><Card className='card'>
-                d
-            </Card>
+                    {cards}
             </Wrapper>
-            <div id="right-arrow" onClick={() => scrollTo(false)}>{">"}</div>
+            <BiRightArrow id="right-arrow" onClick={() => scrollTo(false)}/>    
 
             </Container>
         </Projects>)

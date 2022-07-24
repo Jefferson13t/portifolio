@@ -24,7 +24,7 @@ export default createGlobalStyle`
     
 }
 ::-webkit-scrollbar-thumb {
-        background: linear-gradient(-10deg, rgba(2,0,36,1) 0%, rgba(9,121,93,1) 59%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(-10deg, var(--grad1) 0%, var(--grad2) 59%, var(--grad3) 100%);
         border-radius: 20px;
     }
 
@@ -47,8 +47,9 @@ ul {
 
 :root{
     --primary: white;
-    --secundary: rgba(0,212,255,1)  ;
-    --primaryColor: black;
+    --grad1: rgba(2,0,36,1);
+    --grad2: rgba(9,121,93,1);
+    --grad3: rgba(0,212,255,1);
 }
 
 `
