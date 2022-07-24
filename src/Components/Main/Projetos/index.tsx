@@ -19,37 +19,51 @@ export const Projetos = () => {
     })
 
     //habilitar swipe do celular para o carousel
-    useEffect(() => {
-        const container = document.getElementById('carouselcontainer')
-        let touchendX = 0
-        let touchstartX = 0
-        
+    let touchendX = 0
+    let touchstartX = 0
+    let alreadySwipeLeft = false
+    let alreadySwipeRight = false
+
     function checkDirection() {
-        if(touchendX < touchstartX)  scrollTo(true)
-        if(touchendX > touchstartX)  scrollTo(false)
+        //left
+        if(touchendX > touchstartX)  {
+            if (!alreadySwipeLeft){
+            scrollTo()
+        } 
+        alreadySwipeLeft = !alreadySwipeLeft
+
+        }
+        //right
+        if(touchendX < touchstartX)  {
+            if (!alreadySwipeRight) {
+                scrollTo(false)
+            }
+            alreadySwipeRight = !alreadySwipeRight
+        }
     
     }
+    useEffect(() => {
+        const container = document.getElementById('carouselcontainer')
+        
     
     container?.addEventListener('touchstart', e => {
       touchstartX = e.changedTouches[0].screenX
       e.preventDefault()
-    })
+    }, false)
     
     container?.addEventListener('touchend', e => {
       touchendX = e.changedTouches[0].screenX
       checkDirection()
       e.preventDefault()
-    })
+    }, false)
     
-    })
+    },[])
 
-
-    
-    const scrollTo = (isLeft: boolean): void => {
+    const scrollTo = (isLeft: boolean = true): void => {
         const cards = document.querySelectorAll('.card');
+        console.log(control)
 
-
-        isLeft ? control -= 1 : control += 1;
+        isLeft ? control-- : control++;
 
         if (control < 0) {
             control = cards.length - 1
