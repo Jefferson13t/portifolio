@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/react-gh-pages/static/js/main.3045c117.js",
-    "static/media/portifolio.gif": "/react-gh-pages/static/media/portifolio.4b51da7ddd79518951ad.gif",
-    "static/media/whatsAppUI.gif": "/react-gh-pages/static/media/whatsAppUI.fd629e54697e33725d45.gif",
-    "static/media/noteBlock.gif": "/react-gh-pages/static/media/noteBlock.efd8656a39e9753e3323.gif",
-    "static/media/facebookUI.gif": "/react-gh-pages/static/media/facebookUI.a7b5b54d94cb52c90391.gif",
-    "static/media/snake.gif": "/react-gh-pages/static/media/snake.9064ae2b0a32bf48efca.gif",
-    "static/media/Profile.jpeg": "/react-gh-pages/static/media/Profile.707d57e5e6b500d1fb26.jpeg",
-    "static/media/calculadora.gif": "/react-gh-pages/static/media/calculadora.84b1d4ada40086b9d3ba.gif",
-    "index.html": "/react-gh-pages/index.html",
-    "main.3045c117.js.map": "/react-gh-pages/static/js/main.3045c117.js.map"
+    "main.js": "/portifolio/static/js/main.33a4028a.js",
+    "static/media/portifolio.gif": "/portifolio/static/media/portifolio.4b51da7ddd79518951ad.gif",
+    "static/media/whatsAppUI.gif": "/portifolio/static/media/whatsAppUI.fd629e54697e33725d45.gif",
+    "static/media/noteBlock.gif": "/portifolio/static/media/noteBlock.efd8656a39e9753e3323.gif",
+    "static/media/facebookUI.gif": "/portifolio/static/media/facebookUI.a7b5b54d94cb52c90391.gif",
+    "static/media/snake.gif": "/portifolio/static/media/snake.9064ae2b0a32bf48efca.gif",
+    "static/media/Profile.jpeg": "/portifolio/static/media/Profile.707d57e5e6b500d1fb26.jpeg",
+    "static/media/calculadora.gif": "/portifolio/static/media/calculadora.84b1d4ada40086b9d3ba.gif",
+    "index.html": "/portifolio/index.html",
+    "main.33a4028a.js.map": "/portifolio/static/js/main.33a4028a.js.map"
   },
   "entrypoints": [
-    "static/js/main.3045c117.js"
+    "static/js/main.33a4028a.js"
   ]
 }
