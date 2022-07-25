@@ -9,6 +9,8 @@ import profile from './img/Profile.jpeg'
 import noteBlock from './img/noteBlock.gif'
 import calculadora from './img/calculadora.gif'
 import snake from './img/snake.gif'
+import whatsAppUI from './img/whatsAppUI.gif'
+import facebookUI from './img/facebookUI.gif'
 
 
 interface datas {
@@ -110,6 +112,16 @@ export const data: datas = {
             img: snake,
             techs: "Javascript, Html, css",
             link: "https://github.com/Jefferson13t/snake-game"
+        }, {
+            title: "Whastapp UI",
+            img: whatsAppUI,
+            techs: "React",
+            link: "https://github.com/Jefferson13t/Whatsapp-web-UI-clone"
+        }, {
+            title: "Facebook UI",
+            img: facebookUI,
+            techs: "React",
+            link: "https://github.com/Jefferson13t/Facebook-UI-React"
         }
 
     ],
