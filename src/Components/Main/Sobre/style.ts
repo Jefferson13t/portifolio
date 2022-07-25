@@ -19,11 +19,6 @@ export const About = styled.div`
         width: 50%;
         min-width: 150px;
         transition: .5s;
-
-        &:hover {
-            transform: rotate(-13deg)
-            
-        }
      }
 
 `

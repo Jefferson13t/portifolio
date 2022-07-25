@@ -11,6 +11,7 @@ import calculadora from './img/calculadora.gif'
 import snake from './img/snake.gif'
 import whatsAppUI from './img/whatsAppUI.gif'
 import facebookUI from './img/facebookUI.gif'
+import portifolio from './img/portifolio.gif'
 
 
 interface datas {
@@ -52,21 +53,21 @@ export const data: datas = {
     about: {
         img: profile, 
         resume: [
-            "Olá! Meu nome é Jefferson, sou um dev front-end de belo horizonte.",
-" Sou apaixonado por música, jogos e tecnologia.",
-"Atualmente trabalho com desenvolvimento front-end com a linguagem Javascript, com um pezinho no back-end com o Node.js",
-"Minha história com a programação começou quando era adolescente. Com o sonho de criar o meu próprio jogo, acabei conhecendo o mundo do desenvolvimento, escolhendo o Javascript como linguagem.",
-"Esse site foi feito para mostrar algumas das minhas habilidades e projetos."
+        "Olá! Meu nome é Jefferson, sou um dev front-end de Belo Horizonte.",
+        " Sou apaixonado por música, jogos e tecnologia.",
+        "Atualmente trabalho com desenvolvimento front-end com a linguagem Javascript, com um pezinho no back-end com o Node.js",
+        "Minha história com a programação começou quando era adolescente. Com o sonho de criar o meu próprio jogo, acabei conhecendo o mundo do desenvolvimento, escolhendo o Javascript como linguagem.",
+        "Esse site foi feito para mostrar algumas das minhas habilidades e projetos."
 
             ]
     },
     skills: [{
         habName: "React",
-        habLevel: 40,
+        habLevel: 60,
         logo: <FaReact />
     },{
         habName: "Node",
-        habLevel: 30,
+        habLevel: 20,
         logo: <FaNode />
     },{
         habName: "Javascript",
@@ -98,21 +99,29 @@ export const data: datas = {
 
     projects: [
         {
+            title: "Portifólio",
+            img: portifolio,
+            techs: "React, typescript, styled components, React-icons",
+            link: "https://github.com/Jefferson13t/portifolio"
+        },
+        {
             title: "Bloco de Notas (CRUD)",
             img: noteBlock,
             techs: "React.js, Node.js, Mysql",
             link: "https://github.com/Jefferson13t/Note-block"
-        }, {
-            title: "Calculadora",
-            img: calculadora,
-            techs: "Javascript, Html, css",
-            link: "https://github.com/Jefferson13t/Calculator_2.0"
-        }, {
+        },
+        {
             title: "Snake",
             img: snake,
             techs: "Javascript, Html, css",
             link: "https://github.com/Jefferson13t/snake-game"
-        }, {
+        },
+        {
+            title: "Calculadora",
+            img: calculadora,
+            techs: "Javascript, Html, css",
+            link: "https://github.com/Jefferson13t/Calculator_2.0"
+        },  {
             title: "Whastapp UI",
             img: whatsAppUI,
             techs: "React",
@@ -129,22 +138,23 @@ export const data: datas = {
 
     contact: [
         {
-            perfil: "jeferson_souuza",
-        logo: <AiOutlineInstagram />,
-        link: "https://www.instagram.com/jeferson_souuza/",
-        },{
-            perfil: "jefferson13t",
-        logo: <AiFillGithub />,
-        link: "https://github.com/Jefferson13t",
-        },
-        {
-            perfil: "jefersonpereira1331@gmail.com",
+        perfil: "jefersonpereira1331@gmail.com",
         logo: <HiOutlineMail />,
         },
         {
-            perfil: "jefferson-pereira-845807181",
+        perfil: "jefferson-pereira-845807181",
         logo: <AiOutlineLinkedin />,
         link: "https://www.linkedin.com/in/jefferson-pereira-845807181/",
+        }
+        ,
+        {
+        perfil: "jeferson_souuza",
+        logo: <AiOutlineInstagram />,
+        link: "https://www.instagram.com/jeferson_souuza/",
+        },{
+        perfil: "jefferson13t",
+        logo: <AiFillGithub />,
+        link: "https://github.com/Jefferson13t",
         }
     ],
     credits: "Obrigado pelo seu tempo! Sinta-se livre para entrar em contato comigo usando uma das redes a seguir."
