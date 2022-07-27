@@ -6,9 +6,9 @@ import  {Projetos} from './Components/Main/Projetos';
 import { Contatos } from './Components/Main/Contatos';
 
 
-
 function App() {
 
+  window.alert("Esse site funciona melhor no computador, ainda não foi otimizado para o celular!")
   
   return (
     <Container>
