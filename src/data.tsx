@@ -142,9 +142,9 @@ export const data: datas = {
         logo: <HiOutlineMail />,
         },
         {
-        perfil: "jefferson-pereira-845807181",
+        perfil: "jefferson-souuza",
         logo: <AiOutlineLinkedin />,
-        link: "https://www.linkedin.com/in/jefferson-pereira-845807181/",
+        link: "https://www.linkedin.com/in/jefferson-souuza/",
         }
         ,
         {
